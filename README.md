@@ -107,6 +107,15 @@ Once you have cloned the repositories, follow the instructions for [building in 
 [buildlinuxlink]: https://carla.readthedocs.io/en/latest/build_linux/
 [buildwindowslink]: https://carla.readthedocs.io/en/latest/build_windows/
 
+### Notes for Building on Windows
+
+1. **Use Python 3.8**: This version is recommended to avoid issues with boost libraries, open3d, setuptools, etc., which may arise with Python 3.12.
+2. **Ensure Sufficient Disk Space**: At least 200GB of free space is required.
+3. **Setting Proxy for Remote File Retrieval**: If you encounter issues retrieving remote files, set the proxy in command tools with the following command:
+  ```sh
+  set http_proxy=http://your_proxy:port
+  ```
+
 Contributing
 ------------
 
